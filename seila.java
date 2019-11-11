@@ -114,3 +114,12 @@ public void menuEquipes() {
         }
         return resultado;
 	}
+
+	public String[] leValores (String [] dadosIn){
+		String [] dadosOut = new String [dadosIn.length];
+
+		for (int i = 0; i < dadosIn.length; i++)
+			dadosOut[i] = JOptionPane.showInputDialog  ("Entre com " + dadosIn[i]+ ": ");
+
+		return dadosOut;
+	}
