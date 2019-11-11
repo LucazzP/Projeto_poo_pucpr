@@ -1,47 +1,48 @@
 package EquipeProgramadores_Projeto_POO;
 
+import java.util.ArrayList;
+
 public class Equipe {
 
-	private int programadores;
+	private ArrayList<String> programadores;
 
 	private Programador lider;
 
 	private String nome;
 
 	public Equipe(Programador lider, String nome) {
-
+		this.lider = lider;
+		this.nome = nome;
+		this.programadores = new ArrayList<String>();
 	}
 
 	public void enviarProjeto() {
-
+		
 	}
 
 	public Programador getLider() {
-		return null;
+		return lider;
 	}
 
 	public void setLider(Programador lider) {
-
+		this.lider = lider;
 	}
 
-	public int getProgramadores() {
-		return 0;
+	public ArrayList<String> getProgramadores() {
+		return programadores;
 	}
 
-	public void addProgramador(Programador programador) {
-
+	public void addProgramador(String programador) {
+		programadores.add(programador);
 	}
 
 	public String getNome() {
-		return null;
+		return nome;
 	}
 
 	public void setNome(String nome) {
-
+		this.nome = nome;
 	}
 
-	public String toString() {
-		return null;
-	}
 
 }

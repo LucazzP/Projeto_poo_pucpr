@@ -1,39 +1,39 @@
 package EquipeProgramadores_Projeto_POO;
 
+import java.util.ArrayList;
+
 public abstract class Setor {
 
 	protected int id;
 
 	protected String nome;
 
-	protected int linguagens;
+	protected ArrayList<String> linguagens;
 
 	public Setor(int id, String nome) {
-
+		this.id = id;
+		this.nome = nome;
+		this.linguagens = new ArrayList<String>();
 	}
 
 	public int getId() {
-		return 0;
+		return id;
 	}
 
 	public String getNome() {
-		return null;
+		return nome;
 	}
 
 	public void setNome(String nome) {
-
+		this.nome = nome;
 	}
 
-	public String getLinguagem() {
-		return null;
+	public ArrayList<String> getLinguagem() {
+		return linguagens;
 	}
 
-	public void addLinguagem(String liguagem) {
-
-	}
-
-	public String toString() {
-		return null;
+	public void addLinguagem(String linguagem) {
+		linguagens.add(linguagem);
 	}
 
 }
