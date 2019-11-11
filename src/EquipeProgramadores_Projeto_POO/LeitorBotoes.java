@@ -1,4 +1,4 @@
-package Profissoes;
+package EquipeProgramadores_Projeto_POO;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

@@ -1,15 +1,15 @@
-package Profissoes;
+package EquipeProgramadores_Projeto_POO;
 
 import java.util.ArrayList;
 
-public class Profissao {
+public class EquipeProgramadores {
 	private String nome;
 	private String genero;
 	private ArrayList<String> linguagens;
 	private ArrayList<String> frameworks;
 	private String gitHub;
 
-	public Profissao(String nome, String genero, String gitHub) {
+	public EquipeProgramadores(String nome, String genero, String gitHub) {
 		this.nome = nome;
 		this.genero = genero;
 		this.linguagens = new ArrayList<String>();
